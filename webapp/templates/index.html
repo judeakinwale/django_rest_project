@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+
+    body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height: 100vh;
+      background-color: azure;
+      display: grid;
+    }
+    
+    main{
+      margin: auto;
+    }
+  </style>
+  <main>
+    <h3>This is an example site for the</h3>
+    <h2>Django Rest Framework</h2>
+    <hr>
+    <h5>Please click <a href="{% url 'items' %}">here</a> or <a href="{% url 'staff' %}">here</a> to check it out.</h5>
+
+  </main>
+</body>
+</html>

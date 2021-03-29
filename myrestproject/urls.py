@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
 from rest_framework.urlpatterns import format_suffix_patterns
 from webapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", TemplateView.as_view(template_name='index.html'), name="homepage"),
     path("items/", views.ItemList.as_view(), name="items"),
     path("staff/", views.StaffList.as_view(), name="staff"),
 ]
